@@ -1,6 +1,6 @@
 import * as createElem from './createElements.js';
 
-const renderPhoneBook = (app, title) => {
+export const renderPhoneBook = (app, title) => {
   const header = createElem.createHeader();
   const logo = createElem.createLogo(title);
   const main = createElem.createMain();
@@ -34,7 +34,7 @@ const renderPhoneBook = (app, title) => {
   };
 };
 
-const renderContacts = (elem, data) => {
+export const renderContacts = (elem, data) => {
   const allRow = data.map(createElem.createRow);
   elem.append(...allRow);
   return allRow;
