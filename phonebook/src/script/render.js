@@ -1,6 +1,7 @@
-import * as createElem from './createElements.js';
+import * as createElem from './createElements.mjs';
 
 export const renderPhoneBook = (app, title) => {
+  const imageLogo = createElem.createImageLogo();
   const header = createElem.createHeader();
   const logo = createElem.createLogo(title);
   const main = createElem.createMain();
@@ -20,7 +21,7 @@ export const renderPhoneBook = (app, title) => {
   const table = createElem.createTable();
   const {form, overlay} = createElem.createForm();
   const footer = createElem.createFooter(title);
-  header.headerContainer.append(logo);
+  header.headerContainer.append(imageLogo, logo);
   main.mainContainer.append(buttonGroup.btnWrapper, table, overlay);
   app.append(header, main, footer);
 

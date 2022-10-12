@@ -1,6 +1,5 @@
-import {addContactData, removeStorage} from './serviseStorage.js';
-import {createRow} from './createElements.js';
-
+import {addContactData, removeStorage} from './serviseStorage';
+import {createRow} from './createElements.mjs';
 
 export const modalControl = (btnAdd, formOverlay) => {
   const openModal = () => {
@@ -59,9 +58,3 @@ export const formControl = (form, list, closeModal) => {
     closeModal();
   });
 };
-
-/*export {
-  modalControl,
-  deleteControl,
-  formControl,
-};*/

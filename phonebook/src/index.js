@@ -1,9 +1,10 @@
-import {getStorage} from './modules/serviseStorage.js';
-import render from './modules/render.js';
-import {modalControl, deleteControl, formControl} from './modules/control.js';
+import {getStorage} from './script/serviseStorage';
+import render from './script/render';
+import {modalControl, deleteControl, formControl} from './script/control';
+
+import './scss/index.scss';
 
 const {renderPhoneBook, renderContacts} = render;
-//const {modalControl, deleteControl, formControl} = control;
 
 const init = (selectorApp, title) => {
   const app = document.querySelector(selectorApp);

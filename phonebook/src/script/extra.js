@@ -324,7 +324,6 @@
       btnDel,
     } = renderPhoneBook(app, title);
 
-    // Функционал
     const allRow = renderContacts(list, data);
     const {closeModal} = modalControl(btnAdd, formOverlay);
 
